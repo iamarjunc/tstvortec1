@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Add New Customer{% endblock %}
+
+{% block content %}
+<div class="form-container">
+    <h2 class="text-center">Add new customer</h2>
+    <form id="customerForm">
+        <div class="mb-3">
+            <label for="customerName" class="form-label">Customer Name</label>
+            <input type="text" class="form-control" id="customerName" required>
+        </div>
+        <div class="mb-3">
+            <label for="customerId" class="form-label">Customer ID</label>
+            <input type="text" class="form-control" id="customerId" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="phoneNumber" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phoneNumber" required>
+        </div>
+        <div class="mb-3">
+            <label for="city" class="form-label">City</label>
+            <input type="text" class="form-control" id="city" required>
+        </div>
+        <div class="mb-3">
+            <label for="address1" class="form-label">Address Line 1</label>
+            <input type="text" class="form-control" id="address1" required>
+        </div>
+        <div class="mb-3">
+            <label for="address2" class="form-label">Address Line 2</label>
+            <input type="text" class="form-control" id="address2">
+        </div>
+        <div class="mb-3">
+            <label for="address3" class="form-label">Address Line 3</label>
+            <input type="text" class="form-control" id="address3">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock %}
